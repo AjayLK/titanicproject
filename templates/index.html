@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Survived Prediction</title>
+</head>
+
+<body style="background-color: rgba(94, 198, 113, 0.762);">
+
+    <h1> Passenger Survived Prediction </h1>
+    <form method="GET" action="/predict_survived">
+
+        <label>Pclass:</label>
+        <label>Pclass_1:</label> <input type = "radio" name= "Pclass" value = "pclass_1">
+        <label>Pclass_2:</label> <input type = "radio" name= "Pclass" value = "pclass_2">
+        <label>Pclass_3:</label> <input type = "radio" name= "Pclass" value = "pclass_3">
+
+
+        <br>
+        <br>
+
+        <label>Gender:</label>
+        <label>Male:</label> <input type = "radio" name= "Gender" value = "male">
+        <label>female:</label> <input type = "radio" name= "Gender" value = "female">
+
+        <br>
+        <br>
+
+        <label>Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+        <br>
+        <br>
+
+        <label>SibSp:</label>
+        <input type = "text" name = "SibSp">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Parch:</label>
+        <input type = "text" name = "Parch">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Fare:</label>
+        <input type = "text" name = "Fare">
+        </select>
+        <br>
+        <br>
+
+        <label>Embarked:</label>
+        <label>S:</label> <input type = "radio" name= "Embarked" value = "S">
+        <label>C:</label> <input type = "radio" name= "Embarked" value = "C">
+        <label>Q:</label> <input type = "radio" name= "Embarked" value = "Q">
+
+
+        <br>
+        <br>
+
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p><b> {{ prediction }} </b> </p>
+
+    </form>
+
+
+</body>
+</html>

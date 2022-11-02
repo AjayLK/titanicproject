@@ -1,0 +1,1 @@
+{"pclass_dict": {"pclass_1": 1, "pclass_2": 2, "pclass_3": 3}, "gender_dict": {"male": 1, "female": 0}, "embarked_dict": {"S": 2, "C": 0, "Q": 1}, "columns": ["Pclass", "Gender", "Age", "SibSp", "Parch", "Fare", "Embarked"]}
